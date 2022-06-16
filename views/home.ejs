@@ -1,0 +1,41 @@
+
+
+        <div id="cont">
+            <div id="r">
+        <% if(locals.user){%>
+        <section id="feed-post">
+            <h4>Post</h4>
+            <form action="/post/newpost" id="new-post" method="POST">
+                <textarea name="content" cols="30" rows="3" required placeholder="Write here"></textarea>
+                <input type="submit" value="Post">
+            </form>
+        </section>
+        <%}%>
+        <div id="posthere">
+        <% for(let i of postlist){%>
+            <p id="post-<%=i._id%>"><%=i.content%> 
+                <% if(locals.user){%> 
+                <%if(i.user.id==locals.user.id){%>
+                <a class="delete-post-button" href="/post/destroy/?id=<%=i._id%>"><input type="button" value="delete">  </a>
+                <%}}%>   <br> posted by <%=i.user.name%>
+                <% if(locals.user){%>
+                <form action="/comment/newcomment" id="new-comment-<%=i._id%>" method="POST">
+                 <input type="text" name="comment" placeholder="Type here..." required>
+                 <input type="hidden" name="post" value="<%=i._id%>">
+                <input type="submit" value="Comment">
+                </form>
+                <%}%>
+                <p id="comment-container-<%=i._id%>">
+                <% for(let y of i.comments){%>
+                    <% if(locals.user){%> 
+                        <%=y.content%>|| by<%=y.user.name%>
+                    <%if((y.user.id==locals.user.id)){%>  
+                    <a href="/comment/destroy/?id=<%=y._id%>"><input type="button" value="delete">  </a>
+                    <%}}%><br><%}%>
+                </p>
+            </p>
+            <%}%>
+        </div>
+        </div>
+        <div style="margin-left: 5rem;"><%- include('_userfriend'); %></div></div>
+        <script src="/js/homepost.js"></script>

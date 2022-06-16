@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  /* text-align: center; */ }
+  body #mainbody {
+    margin-bottom: 10px;
+    height: 80%; }
+    body #mainbody #post {
+      height: inherit; }
+    body #mainbody #cont {
+      display: flex; }
+      body #mainbody #cont #r {
+        border-right: 3px solid lightgray;
+        width: 70%; }
+  body #mainbody::-webkit-scrollbar {
+    display: none; }

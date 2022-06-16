@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    /* text-align: center; */
+    #mainbody{
+        margin-bottom: 10px;
+        #post{
+            height:inherit;
+           
+        }
+        height: 80%;
+        #cont{
+            #r{ border-right: 3px solid lightgray;
+                width: 70%;
+            }
+            display: flex;
+        }
+    }
+    #mainbody::-webkit-scrollbar {
+        display: none;
+      }
+}

@@ -1,0 +1,26 @@
+<header>
+    <h1><a style="color: white; text-decoration: none;" href="/">AltreoChat</a> </h1>
+     
+        <% if (locals.user){ %>
+            <div class="op">
+                <div id="user">
+                <a href="/users/profile/<%=locals.user.id%>">
+                    <%= user.name %>
+                </a>
+        </div><div id="signout">
+                <a href="/users/sign-out">Sign Out</a>
+        </div>
+        </div>
+        <% }else{ %>
+            <div class="op">
+                <div id="signin">
+                <a href="/users/sign-in">Sign In</a>
+            </div>
+                <div id="useradd">
+                <a href="/users/sign-up">Sign Up</a>
+           </div>
+        </div>
+
+        <% } %>
+
+</header>

@@ -1,0 +1,56 @@
+footer{
+    position: relative;
+    height: 5rem;
+    width:100%;
+    background-color: rgb(87, 84, 84);
+    color: white;
+    display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    justify-content: space-between;
+    .fot1{
+        width: 40rem;
+        p{
+            margin-right: 25px;
+        }
+        h1{ 
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        div{
+            top: 0px;
+            display: flex;
+        }
+        #insta,#fb, #linked,#yt{
+            margin-top: 0.5rem;
+            
+            font-size: 2rem;
+        }
+        #insta{
+            margin-left: 3rem;
+        }
+        margin-right: 1rem;
+        display: flex;
+        #insta::before{
+           
+           
+            content: "\f16d            ";
+            font-family: FontAwesome;
+           }
+           #fb::before{
+               content: "\f39e";
+            font-family: FontAwesome;
+           }
+           #linked::before{
+               content: "\f0e1";
+            font-family: FontAwesome;
+           }
+           #yt::before{
+               content: "\f167";
+            font-family: FontAwesome;
+           }
+
+    }
+}

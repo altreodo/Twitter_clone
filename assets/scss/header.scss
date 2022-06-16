@@ -1,0 +1,47 @@
+header{
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+    position: sticky;
+    top: 0px;
+    h1{
+        margin-left: 1.2rem;
+    }
+    display: flex;
+    height: 4rem;
+    background-color: rgb(97, 97, 209);
+    font-size: larger;
+    font-family: sans-serif;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    .op{
+        #signin::before{
+         content: "\f2f6            ";
+         font-family: FontAwesome;
+        }
+        #signout::before{
+            content: "\f2f5";
+         font-family: FontAwesome;
+        }
+        #user::before{
+            content: "\f406";
+         font-family: FontAwesome;
+        }
+        #useradd::before{
+            content: "\f234";
+         font-family: FontAwesome;
+        }
+        a{
+        color: white;
+        text-decoration: none;
+        }
+        div{
+            font-family:Arial, Helvetica, sans-serif;
+            margin-right: 20px;
+        }
+        display: flex;
+        font-weight: bold;
+        font-size: larger;
+        justify-content: right;
+        margin-right: 30px;
+    }
+  }

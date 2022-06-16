@@ -1,0 +1,8 @@
+<%if(locals.user){%>
+<section id="userfriend" >
+    <h4>Friends</h4>
+    <% for(i of allusers){%>
+        <a href="/users/profile/<%=i.id%>"><%=i.name%></a><br>
+        <%}%>
+</section>
+<%}%>

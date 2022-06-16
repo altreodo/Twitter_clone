@@ -1,0 +1,40 @@
+footer {
+  position: relative;
+  height: 5rem;
+  width: 100%;
+  background-color: #575454;
+  color: white;
+  display: flex;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  justify-content: space-between; }
+  footer .fot1 {
+    width: 40rem;
+    margin-right: 1rem;
+    display: flex; }
+    footer .fot1 p {
+      margin-right: 25px; }
+    footer .fot1 h1 {
+      margin: 0; }
+    footer .fot1 a {
+      text-decoration: none;
+      color: white; }
+    footer .fot1 div {
+      top: 0px;
+      display: flex; }
+    footer .fot1 #insta, footer .fot1 #fb, footer .fot1 #linked, footer .fot1 #yt {
+      margin-top: 0.5rem;
+      font-size: 2rem; }
+    footer .fot1 #insta {
+      margin-left: 3rem; }
+    footer .fot1 #insta::before {
+      content: "\f16d            ";
+      font-family: FontAwesome; }
+    footer .fot1 #fb::before {
+      content: "\f39e";
+      font-family: FontAwesome; }
+    footer .fot1 #linked::before {
+      content: "\f0e1";
+      font-family: FontAwesome; }
+    footer .fot1 #yt::before {
+      content: "\f167";
+      font-family: FontAwesome; }
